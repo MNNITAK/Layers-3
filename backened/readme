@@ -1,0 +1,9 @@
+ <!-- 1->  
+ Use of try...catch in JavaScript (Especially in Async/Await)
+The try...catch block is used to handle errors gracefully in JavaScript. It ensures that if an error occurs in the try block, it doesn't crash the program but instead gets handled in the catch block. -->
+
+
+
+
+
+mongodb+srv://ay9120991471:<db_password>@cluster0.jjulygd.mongodb.net/

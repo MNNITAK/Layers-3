@@ -1,0 +1,83 @@
+.cosmic-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(145deg, #0c0f2a, #1a1f38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.glow-orb {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #13193d 30%, #0c0f2a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 60px #00ffe777,
+    0 0 120px #8b54ff88,
+    inset 0 0 20px #0c0f2a;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.glow-orb img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.caption {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #dddddd;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #8b54ff88;
+}
+
+.action-icons {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  color: #ffffffcc;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.action-icons span {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.action-icons span:hover {
+  transform: scale(1.2);
+  color: #00ffe7;
+}
+
+.fullscreen-mode {
+  background: radial-gradient(circle at center, #0c0f2a 10%, #050611 90%);
+}
+
+.fullscreen-mode .glow-orb {
+  width: 85vw;
+  height: 85vh;
+  border-radius: 2rem;
+  box-shadow: 0 0 100px #00ffe788, 0 0 180px #8b54ff99;
+}
+
+.fullscreen-mode .glow-orb img {
+  border-radius: 1.2rem;
+}
+
+.fullscreen-mode .caption,
+.fullscreen-mode .action-icons {
+  display: none;
+}
